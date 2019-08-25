@@ -31,7 +31,7 @@ namespace HairSalon
         public void Configure(IApplicationBuilder app)
         {
             app.UseDeveloperExceptionPage();
-
+             app.UseStaticFiles();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
@@ -39,7 +39,7 @@ namespace HairSalon
                 template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            app.UseStaticFiles();
+           
             app.Run(async (context) =>
             {
                 await context.Response.WriteAsync("Oops! Something went wrong...");

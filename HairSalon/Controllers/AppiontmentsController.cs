@@ -1,15 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using HairSalon.Models;
 using System.Linq;
+using HairSalon.Models;
 
 namespace HairSalon.Controllers
 {
-    public class ClientsController : Controller
+    public class AppointmentsController : Controller
     {
         private readonly HairSalonContext _db;
 
-        public ClientsController(HairSalonContext db)
+        public AppointmentsController(HairSalonContext db)
         {
             _db = db;
         }
@@ -18,15 +18,16 @@ namespace HairSalon.Controllers
         {
             ViewBag.Stylist = _db.Stylists
                 .FirstOrDefault(stylists => stylists.StylistId == id);
+            ViewBag.ClientId = new SelectList(_db.Clients.Where(clients => clients.StylistId == id), "ClientId", "Name");
             return View();
         }
 
         [HttpPost]
-        public ActionResult Create(Client client)
+        public ActionResult Create(Appointment appointment)
         {
-            _db.Clients.Add(client);
+            _db.Appointments.Add(appointment);
             _db.SaveChanges();
-            return RedirectToAction("Details", "Stylists", new { id = client.StylistId });
+            return RedirectToAction("Details", "Stylists", new { id = appointment.StylistId });
         }
     }
 }
