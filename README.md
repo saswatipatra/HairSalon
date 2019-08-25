@@ -10,12 +10,13 @@ On this web site, where Owner can store all the details about his emoloyee (styl
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Enter the stylist name** | Name: Suzie | Output: Suzie, as drowdown when client details will be added|
-| **Enter the client name** |Client Name: Pierre and Stylist Name: Suzie | Output: It will Store all the information about client and their stylers|
+| **Enter the stylist Details** | Name: Suzie | Output: When click on this it will show all the client details and appointment|
+| **Enter the client details** |Client Name: Pierre and Stylist Name: Suzie | Output: It will Store all the information about client and their stylers|
 
 ## Setup/Installation Requirements
 *_Clone this repository:_*
-*_Create a table call Client and Stylist in SQL Workbench and add it in the appsetting.json file_*
+*_Create a schema as per the file name ie hair_salon_*
+*_Create three table call clients, stylists and appointments in SQL Workbench and create the coloum name as per the variable name given in their respective classes_*
 *_Build distribution files: dotnet build_*
 *_Start the file: dotnet run_*
 
