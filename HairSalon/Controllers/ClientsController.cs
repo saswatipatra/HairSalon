@@ -28,5 +28,6 @@ namespace HairSalon.Controllers
             _db.SaveChanges();
             return RedirectToAction("Details", "Stylists", new { id = client.StylistId });
         }
+
     }
 }

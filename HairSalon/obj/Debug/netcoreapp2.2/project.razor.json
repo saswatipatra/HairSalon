@@ -2971,23 +2971,18 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Clients\\Details.cshtml",
-      "TargetPath": "Views\\Clients\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "Views\\Stylists\\Delete.cshtml",
       "TargetPath": "Views\\Stylists\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FilePath": "Views\\Appointment\\Create.cshtml",
+      "TargetPath": "Views\\Appointment\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Clients\\Edit.cshtml",
-      "TargetPath": "Views\\Clients\\Edit.cshtml",
+      "FilePath": "Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -3003,16 +2998,6 @@
     {
       "FilePath": "Views\\Stylists\\Details.cshtml",
       "TargetPath": "Views\\Stylists\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views\\Clients\\Delete.cshtml",
-      "TargetPath": "Views\\Clients\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views\\Clients\\Index.cshtml",
-      "TargetPath": "Views\\Clients\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
